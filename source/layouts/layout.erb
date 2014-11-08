@@ -1,28 +1,217 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <!-- Use title if it's in the page YAML frontmatter -->
-        <title><%= current_page.data.title || "HTML5 Boilerplate" %></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
 
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- Basic Page Needs
+  ================================================== -->
+  <meta charset="utf-8">
+  <title>E X O C A T S - Hack Up The Universe</title>
+  <meta name="description" content="E X O C A T S - Hack Up The Universe">
 
-        <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.6.1.min.js"></script>
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
-        <![endif]-->
+  <!-- Mobile Specific Metas
+  ================================================== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+  <script src="js/vendor/modernizr-2.6.1.min.js"></script>
+
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <!-- Favicons
+  ================================================== -->
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Google Font API
+  ================================================== -->
+  <link href='http://fonts.googleapis.com/css?family=Lato:100,400,900,100italic,400italic,900italic' rel='stylesheet' type='text/css'>
+
+  <!-- Toggle
+  ================================================== -->
+
+  <script type="text/javascript">
+    <!--
+    function toggle_visibility(id) {
+      var e = document.getElementById(id);
+      if(e.style.display == 'block')
+        e.style.display = 'none';
+      else
+        e.style.display = 'block';
+    }
+//-->
+  </script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+
+  <style>
+    .hidden {visibility: hidden;}
+    .container {padding-bottom: 60px;}
+    .donate input{background-color: #AAD3C7 !important, color: white;}
+    /*.header*/ {
+    background: -webkit-linear-gradient(black, white); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(black, white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(black, white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(black, white); /* Standard syntax */
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- HEADER /////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+  <div class="mainimage">
+    <div class="container">
         <%= yield %>
+    </div><!-- container -->
+  </div><!-- main image -->
 
+  <!-- STATS /////////////////////////////////////////////////////////////////////////////////////////// -->
+
+  <div class="container overlay">
+    <a name="content"></a>
+    <div class="sixteen columns center">
+      <a href="#"><img src="img/go_button_3.png" alt="GO EXO!"  /></a>
+      <br />
+      <h1>Hello, Human</h1>
+      <h2>Welcome to what you have always wanted, a literal universe of cats.</h2>
+      <hr>
+      <h4>Donate and Share ExoCats to unlock more of the universe!</h4>
+
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="sixteen columns center">
+      <div class="five columns d4">
+        <div style="height:200px;" class="box-padding">
+          <h1 class="toppad money">$200</h1>
+        </div>
+      </div>
+
+      <div class="six columns d3">
+        <div style="height:200px;" class="box-padding">
+          <h1 class="toppad">20.1</h1>
+        </div>
+      </div>
+
+      <div class="five columns d7">
+        <div style="height:200px;" class="box-padding">
+          <h1 class="toppad">Cat</h1>
+        </div>
+      </div>
+
+      <div class="five columns">
+        <div style="height:150px;" class="box-padding">
+          <h6 class="center">DONATIONS</h6>
+
+          <h2 class="button" id="donateBtn">Give Science Money!</h2>
+          <div class="donate hidden">
+            <input type="text" style="border-radius: 5px; background-color: #AAD3C7">
+          </div>
+
+        </div>
+      </div>
+
+      <div class="six columns">
+        <div style="height:150px;" class="box-padding">
+          <h6>PARSECS</h6>
+
+          <span class="small">A parsec is <a href="http://en.wikipedia.org/wiki/Parsec">3.26 light-years</a> in distance.</span>
+        </div>
+      </div>
+
+      <div class="five columns">
+        <div style="height:150px;" class="box-padding">
+          <h6>SOCIAL</h6>
+
+          <h2 class="button" id="socialBtn">Share the Love!</h2>
+          <div class="share hidden" style="background-color: #0B0B21">
+            <a href="https://twitter.com/?lang=en" target="_blank"><img src="img/twitter.png" class="twitter" style="width: 65px; margin: 15px"></a>
+            <a href="https://www.facebook.com/?stype=lo&jlou=Afc_w5ucR2OF4dVAsZ7jBn2gtUJVLcSDskmOmY5ze4CpcLdKtl4zKAwQk3Ay9WcSYD46AvUsP9ZiDIMB4SszoBGuzYcgeaBUY0Gk8yZ09UKRIg&smuh=27617&lh=Ac-BLWjdHGuJPRVG" target="_blank"><img src="img/facebook.png" style="width: 65px; margin: 15px; border-radius: 5px"></a>
+          </div> <!-- share -->
+        </div>
+      </div>
+    </div>
+
+  </div><!-- sixteen columns -->
+</div><!-- container -->
+
+<div class="tealbg">
+  <div class="container ">
+
+    <div class="eight columns">
+      <h1 class="darkblue"><br />
+
+        <br />For Science!</h1>
+
+      <h3 class="darkblue"><br />Every time you make a donation to science and share ExoCats on social media through the links above, we generate enough resources and influence to continue expanding the Universe for you to explore!  It’s easy to support ExoCats and your local astrophysicists.  </h3>
+      <hr>
+      <h2 class="darkblue">And the best part?  You’re on a team with the entire planet!</h2>
+      <hr>
+      <h3 class="darkblue">When a level is unlocked for one person, it becomes available for all humans.</h3>
+
+      <h3 class="darkblue">The more we work together as a planet to increase funding and influence for the sciences, the more of the universe we can explore.</h3>
+
+      <br />
+
+    </div><!-- eight columns -->
+
+    <div class="one column">
+      &nbsp;
+    </div>
+
+    <div class="seven columns">
+      <h1 class="darkblue"><br />
+
+        <img src="img/exocat-icon2.png" style="margin-top: 60px">
+
+        <br /><br />ExoCats</h1>
+      <h3 class="darkblue"><br />Scientists and researchers have been able to capture data for over 1,500 exoplanets.  ExoCats are a visual representation of all the planet-like bodies within our local supercluster.
+        <hr>
+        <h2 class="darkblue">We've made exploring the universe fun and educational by pairing exoplanet data with visual markers to create interstellar cats.</h2>
+        <hr>
+
+        <h3 class="darkblue">ExoCats are based on available data that includes planet distance, density, period, and temperature.</h3>
+      </div><!-- eight columns -->
+    </div><!-- container -->
+  </div>
+
+  <!-- FOOTER /////////////////////////////////////////////////////////////////////////////////////////// -->
+
+  <div class="yellowbg">
+    <div class="container">
+      <div class="sixteen columns">
+        <div class="nine columns small">Made in New York, NY  |  <a href="http://www.amnh.org/calendar/hack-the-universe2">Hack The Universe 2014</a></div>
+        <div class="six columns small right"><em>"There are many intelligent species in the universe. They all own cats."</em>   </div>
+      </div>
+    </div>
+  </div>
+
+  <br /><br /><br /><br /><br /><br />
+
+  <script type="text/javascript">
+    $(document).ready(function) {
+      var numAnim = new countUp(".money", 0, 202.58, 2, 15);
+      numAnim.start();
+
+      $('#socialBtn').click(function() {
+        $('.share').removeClass('hidden');
+      });
+
+      $('#donateBtn').click(function() {
+        $('.donate').removeClass('hidden');
+      });
+    });
+  </script>
+
+  <!-- End Document
+================================================== -->
         <script src="js/vendor/index.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
@@ -35,5 +224,5 @@
             g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
             s.parentNode.insertBefore(g,s)}(document,'script'));
         </script>
-    </body>
+</body>
 </html>
