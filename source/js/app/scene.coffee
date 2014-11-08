@@ -55,7 +55,7 @@ class window.Scene
     @backgroundScene .add(backgroundMesh )
 
   addActors: (geometry, material) ->
-    for system in json_data[0...30]
+    for system in json_data[0...40]
 
       actor = new Actor(system.system)
 

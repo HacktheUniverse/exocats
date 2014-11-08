@@ -15,17 +15,6 @@ particleMaterial = new THREE.SpriteMaterial(
 detectClick = (event) ->
   event.preventDefault()
 
-  console.log(
-    (event.clientX / window.innerWidth) * 2 - 1
-    - (event.clientY / window.innerHeight) * 2 + 1
-    event.clientX
-    event.clientY
-    window.innerWidth
-    window.innerHeight
-    $('#scene').css('width')
-    $('#scene').css('height')
-  )
-
   vector = new THREE.Vector3()
   vector.set(
     (event.clientX / window.innerWidth) * 2 - 1
@@ -52,11 +41,6 @@ load = ->
   window.s = scene.getScene()
   window.objects = scene.getActors()
   $('canvas').on('click', detectClick)
-
-  $range = $('input[type="range"]')
-  $range.on 'change', ->
-    val = parseInt($range.val(), 10)
-    camera.position.z = (8 - (val / 10))
 
   camera.position.set(1,1,8)
   camera.lookAt(s.position)

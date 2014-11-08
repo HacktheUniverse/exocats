@@ -6,7 +6,7 @@ class window.Actor
     for i in [1..9]
       @textures.push(THREE.ImageUtils.loadTexture("img/cats/actual-cat-0000#{i}.png"))
 
-    for i in [10..20]
+    for i in [10..26]
       @textures.push(THREE.ImageUtils.loadTexture("img/cats/actual-cat-000#{i}.png"))
 
     geo = new THREE.SphereGeometry(0.6, 20, 20)
@@ -35,13 +35,6 @@ class window.Actor
     @mesh.position.x = x
     @mesh.position.y = y
     @mesh.position.z = z
-
-    console.log(
-      "Setting at"
-      x
-      y
-      z
-    )
 
     @mesh.userData = system
 

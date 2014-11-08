@@ -204,7 +204,6 @@
 
   <script type="text/javascript">
     $(document).ready(function) {
-      var numAnim = new countUp(".money", 0, 202.58, 2, 15);
       numAnim.start();
 
       $('#socialBtn').click(function() {

@@ -196,17 +196,12 @@
   <br /><br /><br /><br /><br /><br />
 
   <script type="text/javascript">
-    $(document).ready(function) {
-      var numAnim = new countUp(".money", 0, 202.58, 2, 15);
-      numAnim.start();
+    $('#socialBtn').click(function() {
+      $('.share').removeClass('hidden');
+    });
 
-      $('#socialBtn').click(function() {
-        $('.share').removeClass('hidden');
-      });
-
-      $('#donateBtn').click(function() {
-        $('.donate').removeClass('hidden');
-      });
+    $('#donateBtn').click(function() {
+      $('.donate').removeClass('hidden');
     });
   </script>
 
