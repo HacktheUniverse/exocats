@@ -1,6 +1,6 @@
 #= require ./scene
 
-$.getJSON("/js/data_array.json").success((data) -> window.json_data = data; load())
+$.getJSON("/js/cleaned.json").success((data) -> window.json_data = data; load())
 
 PI2 = Math.PI * 2
 particleMaterial = new THREE.SpriteMaterial(
@@ -45,9 +45,6 @@ detectClick = (event) ->
   if intersects.length > 0
     intersect = intersects[0]
     intersect.object.callback()
-    #texture = THREE.ImageUtils.loadTexture("img/test-cat.png")
-    #material = new THREE.MeshLambertMaterial({map: texture, color: 0x00FFFF, transparent: true})
-    #i.object.material = material
 
 load = ->
   scene = new Scene()
@@ -66,5 +63,5 @@ load = ->
 
 $('.close').on('click', ->
   $('#info').hide('slow')
-  window.s.remove(Actor.sphere)
+  window.s.remove(Actor.planet)
 )

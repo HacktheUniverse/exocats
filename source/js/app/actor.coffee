@@ -1,16 +1,27 @@
 class window.Actor
-  @geometry: new THREE.BoxGeometry(1, 1, 0)
+  @geometry: new THREE.BoxGeometry(1, 1, 0.01)
   @textures: []
+  @planet: null
   @loadTextures: ->
-    for i in [1..7]
+    for i in [1..9]
       @textures.push(THREE.ImageUtils.loadTexture("img/cats/actual-cat-0000#{i}.png"))
+
+    for i in [10..20]
+      @textures.push(THREE.ImageUtils.loadTexture("img/cats/actual-cat-000#{i}.png"))
+
+    geo = new THREE.SphereGeometry(0.6, 20, 20)
+    material = new THREE.MeshLambertMaterial(
+      map: THREE.ImageUtils.loadTexture("img/planet-texture.png")
+      color: 0xFFFFFF
+    )
+    @planet = new THREE.Mesh(geo, material)
 
   @texture: -> @textures[parseInt(Math.random() * @textures.length, 10)]
 
   constructor: (system) ->
-    material = new THREE.MeshLambertMaterial(
+    material = new THREE.MeshPhongMaterial(
       map: Actor.texture()
-      color: 0x00FFFF
+      color: 0xFFFFFF
       transparent: true
       overdraw: true
     )
@@ -45,16 +56,9 @@ class window.Actor
     $info.find('.distance').text(@userData().distance)
     $info.show()
 
-    window.s.remove(Actor.sphere)
-    geo = new THREE.SphereGeometry(0.5, 10, 10)
-    material = new THREE.MeshBasicMaterial(
-      color: 0x00FFF0
-    )
-    mesh = new THREE.Mesh(geo, material)
     p = @mesh.position
-    mesh.position.set(p.x, p.y, p.z)
-    window.s.add(mesh)
-    Actor.sphere = mesh
-
+    Actor.planet.position.set(p.x, p.y, p.z)
+    window.s.remove(Actor.planet)
+    window.s.add(Actor.planet)
 
   @loadTextures()

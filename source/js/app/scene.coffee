@@ -19,30 +19,23 @@ class window.Scene
     )
 
     @renderer = new THREE.WebGLRenderer()
-
     @renderer.setSize(width, height)
     $parent.prepend(@renderer.domElement)
 
-    #texture = THREE.ImageUtils.loadTexture("img/test-cat-1.png")
-
     @addActors()
-
     @addBackground()
 
-    @scene.fog = new THREE.FogExp2( 0x9999ff, 0.00025 )
+    pointLight = new THREE.PointLight(0xFFFFFF)
+    pointLight.position.set(0, 3, 0)
+    @scene.add(pointLight)
+
+    axes = new THREE.AxisHelper(-1)
+    @scene.add(axes)
 
     @camera.position.set(0, 0, 1)
 
-    light = new THREE.AmbientLight(0xFFFFFF)
-    @scene.add(light)
-
-    directionalLight = new THREE.DirectionalLight(0xffffff, 0.5)
-    directionalLight.position.set(0, 1, 0)
-    @scene.add(directionalLight)
-
-    axes = new THREE.AxisHelper(5)
-    @scene.add(axes)
-
+    controls = new THREE.OrbitControls(@camera, @renderer.domElement)
+    @scene.add(controls)
     @render()
 
   addBackground: =>
