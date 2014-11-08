@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ExoCats | Cats in Space</title>
+
+	<script type="text/javascript" src="js/libs/jquery.js"></script>
+	<script type="text/javascript" src="js/libs/api.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<link rel="stylesheet" href="css/main.css">
+
+	<body>
+	<div class="mainContainer">
+		<div class="header">
+			<h1>Exo<span style="text-decoration:line-through">Planets</span>CATS!</h1> <!-- image? -->
+		</div>
+
+		<div class="copy1">
+			<h2>Meow baby</h2>
+			
+			<p>Welcome to ExoCats where alien planets equal kitties!</p>
+			<p>Did you know that we are discovering new planetary systems everyday? And that cats are the number one internet lookup? Play with cats AND learn about new planets all in one place you lucky thing you!</p>
+
+		
+		</div>
+
+		<div class="viewPort">
+
+		 <!-- <div class="buttons">	 -->
+			<div id="forwardBtn" class="vPbtn">Forward</div>
+			<div id="backBtn" class="vPbtn">Back</div>
+		 <!-- </div> --> <!-- buttons -->
+		</div> <!-- viewPort -->
+		
+	<div class="secondContainer">
+		
+		<!-- ************************
+		FORM
+		************************ -->	
+	 <div class="fsBody" id="fsLocal">
+		<link rel="stylesheet" type="text/css" href="https://www.formstack.com/forms/css/3/reset.css?20140508" />
+		<link rel="stylesheet" type="text/css" href="https://www.formstack.com/forms/css/3/default.css?20141028" />
+		<link rel="stylesheet" type="text/css" href="https://www.formstack.com/forms/css/3/steel.css" />
+		<style type="text/css">
+		</style>
+<!-- 		<body class="fsBody" > -->
+		<form method="post" novalidate enctype="multipart/form-data" action="https://www.formstack.com/forms/index.php" class="fsForm fsSingleColumn fsMaxCol1" id="fsForm1870136">
+	 		<h3 style="margin-left: 2.2%; color: #A2B5CD">Sign Up</h3>
+		
+		<input type="hidden" name="form" value="1870136" />
+		<input type="hidden" name="viewkey" value="5QKM40XnZN" />
+		<input type="hidden" name="hidden_fields" id="hidden_fields1870136" value="" />
+		<input type="hidden" name="_submit" value="1" />
+		<input type="hidden" name="incomplete" id="incomplete1870136" value="" />
+		<input type="hidden" name="style_version" value="3" />
+		<div role="alert" id="requiredFieldsError" style="display:none;">Please fill in a valid value for all required fields</div>
+		<div role="alert" id="invalidFormatError" style="display:none;">Please ensure all values are in a proper format.</div>
+		<div role="alert" id="resumeConfirm" style="display:none;">Are you sure you want to leave this form and resume later?</div>
+		<div role="alert" id="fileTypeAlert" style="display:none;">You must upload one of the following file types for the selected field:</div>
+		<div role="alert" id="embedError" style="display:none;">There was an error displaying the form. Please copy and paste the embed code again.</div>
+		<div role="alert" id="applyDiscountButton" style="display:none;">Apply Discount</div>
+		<div role="alert" id="dcmYouSaved" style="display:none;">You saved</div>
+		<div role="alert" id="dcmWithCode" style="display:none;">with code</div>
+		<div role="alert" id="submitButtonText" style="display:none;">Sign Up!</div>
+		<div role="alert" id="submittingText" style="display:none;">Submitting</div>
+		<div class="fsPage" id="fsPage1870136-1">
+		<div class="fsSection fs1Col">
+		<div id="fsRow1870136-1" class="fsRow fsFieldRow fsLastRow">
+		<div class="fsRowBody fsCell fsFieldCell fsFirst fsLast fsLabelVertical fsSpan100" id="fsCell28620373" lang="en">
+		<span id="label28620373" class="fsLabel">Name</span>
+		<div class="fsSubFieldGroup">
+		<div class="fsSubField">
+		<input type="text" id="field28620373-first" name="field28620373-first" size="20" value="" class="fsField fsFieldName" />
+		<label class="fsSupporting" for="field28620373-first">First Name</label>
+		</div>
+		<div class="fsSubField">
+		<input type="text" id="field28620373-last" name="field28620373-last" size="20" value="" class="fsField fsFieldName" />
+		<label class="fsSupporting" for="field28620373-last">Last Name</label>
+		</div>
+		</div>
+		<div class="clear"></div>
+		</div>
+		</div>
+		<div id="fsRow1870136-2" class="fsRow fsFieldRow fsLastRow">
+		<div class="fsRowBody fsCell fsFieldCell fsFirst fsLast fsLabelVertical fsSpan100" id="fsCell28620374" lang="en">
+		<label id="label28620374" class="fsLabel" for="field28620374">Email                                            </label>
+		<input type="email" id="field28620374" name="field28620374" size="50" value="" class="fsField fsFormatEmail" />
+		</div>
+		</div>
+		<div id="fsRow1870136-3" class="fsRow fsFieldRow fsLastRow">
+		<div class="fsRowBody fsCell fsFieldCell fsFirst fsLast fsLabelVertical fsSpan100" id="fsCell28620375" lang="en">
+		<label id="label28620375" class="fsLabel" for="field28620375">Short Answer                                            </label>
+		<input type="text" id="field28620375" name="field28620375" size="50" value="" class="fsField" />
+		</div>
+		</div>
+		</div>
+		</div>
+		<div id="fsSubmit1870136" class="fsSubmit fsPagination">
+		<button type="button" id="fsPreviousButton1870136" class="fsPreviousButton" value="Previous Page" style="display:none;"><span class="fsFull">Previous</span><span class="fsSlim">&larr;</span></button>
+		<button type="button" id="fsNextButton1870136" class="fsNextButton" value="Next Page" style="display:none;"><span class="fsFull">Next</span><span class="fsSlim">&rarr;</span></button>
+		<input id="fsSubmitButton1870136"
+		class="fsSubmitButton"
+		style="display: block;"
+		type="submit"
+		value="Submit Form" />
+		<div class="clear"></div>
+		</div>
+		<script type="text/javascript" src="https://www.formstack.com/forms/js/3/jquery.min.js"></script>
+		<link href="https://www.formstack.com/forms/css/3/jquery-ui.css?20140508" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="https://www.formstack.com/forms/js/3/jquery-ui.min.js?20140508"></script>
+		<script type="text/javascript" src="https://www.formstack.com/forms/js/3/scripts.js?20141029"></script>
+		<script type="text/javascript" src="https://www.formstack.com/forms/js/3/analytics.js?20140409"></script>
+		<script type="text/javascript">
+		if(window.addEventListener) {
+		window.addEventListener('load', loadFormstack, false);
+		} else if(window.attachEvent) {
+		window.attachEvent('onload', loadFormstack);
+		} else {
+		loadFormstack();
+		}
+		function loadFormstack() {
+		var form1870136 = new Formstack.Form(1870136, 'https://www.formstack.com/forms/');
+		form1870136.logicFields = [];
+		form1870136.calcFields = [];
+		form1870136.init();
+		form1870136.plugins.analytics = new Formstack.Analytics('', 1870136, form1870136);
+		form1870136.plugins.analytics.trackTouch();
+		form1870136.plugins.analytics.trackBottleneck();
+		window.form1870136 = form1870136;
+		};
+		</script>
+		</form>
+		<img src="https://www.formstack.com/forms/count.php?1870136" alt="Form View Counter" width="1" height="1" border="0" />
+	 </div> <!-- form fsBody-->	
+
+	 <div class="share">
+		<h3>Social Hour</h3>	
+			<img src="img/twitter.jpeg" class="twitter">
+			<img src="img/facebook.jpeg" >
+	 </div> <!-- share -->
+
+	 <div class="donate">
+		<h3>Give Us Your Money!</h3>	
+			<input type="checkbox" name="money" id="" value="">
+				<label for="">Give $5</label><br>
+			<input type="checkbox" name="money" id="" value="">
+				<label for="">Give $10</label><br>
+			<input type="checkbox" name="money" id="" value="">
+				<label for="">Give $25</label><br>
+			<input type="checkbox" name="money" id="" value="">
+				<label for="">Give $100</label>
+	 </div> <!-- donate -->
+	</div> <!-- secondContainer -->
+</div> <!-- mainContainer -->
+
+</body>
+</html>
