@@ -47,7 +47,7 @@ class window.Actor
     $info.find('.name').text(@userData().name)
     $info.find('.description').text(@userData().description)
     $info.find('.distance').text(@userData().distance)
-    $info.show()
+    $info.slideDown("fast")
 
     p = @mesh.position
     Actor.planet.position.set(p.x, p.y, p.z)

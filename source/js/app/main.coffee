@@ -46,6 +46,6 @@ load = ->
   camera.lookAt(s.position)
 
 $('.close').on('click', ->
-  $('#info').hide('slow')
+  $('#info').slideUp('medium')
   window.s.remove(Actor.planet)
 )
