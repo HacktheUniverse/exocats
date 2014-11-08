@@ -1,5 +1,3 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-gem "pry"
-gem "nori"
-gem "nokogiri"
+gem "middleman", "~>3.3.6"
