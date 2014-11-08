@@ -185,10 +185,7 @@
 		<div class="eight columns">
 		<h1 class="darkblue"><br />
          
-            ^---^
-         
-                      
-                      <br /><br />For Science!</h1>
+           		<br />For Science!</h1>
 		
 		<h3 class="darkblue"><br />Every time you make a donation to science and share ExoCats on social media through the links above, we generate enough resources and influence to continue expanding the Universe for you to explore!  It’s easy to support ExoCats and your local astrophysicists.  </h3>
 <hr>
@@ -209,7 +206,7 @@
 		<div class="seven columns">
 		<h1 class="darkblue"><br />
          
-            ^---^
+            	<img src="assets/exocat-icon2.png" style="margin-top: 60px">
          
                       
                       <br /><br />ExoCats</h1>
